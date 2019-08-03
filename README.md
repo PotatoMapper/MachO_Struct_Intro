@@ -5,11 +5,11 @@
 
 **MacOS/iOS programs (Like any other OS) rely on Libraries**
 
-Libraries contain shared code used by different programs
+      Libraries contain shared code used by different programs
 
-When Program is initialized it Loads all the libraries it needs and links all the libraries to allow them to call each other's functions.
+      When Program is initialized it Loads all the libraries it needs and links all the libraries to allow them to call each other's functions.
 
-In addition, the ObjC runtime must Init each library when its loaded.
+      In addition, the ObjC runtime must Init each library when its loaded.
 
 *These tasks inherently slow down Launching of programs and in comes Apple ingenuity*
 
@@ -17,6 +17,7 @@ In addition, the ObjC runtime must Init each library when its loaded.
 into the **dyld shared cache**
 
 **dyld shared cache:** 
+
 File containing EVERY library built into the OS, all linked together and with the ObjC runtime already initialized. So instead of loading and processing Hundreds of Files on file launch, the program just loads one file at startup already Pre Processed.
 
 **On iOS, since ALL the system libraries are in the shared cache, the individual Libraries

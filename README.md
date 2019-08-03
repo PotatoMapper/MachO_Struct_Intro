@@ -75,6 +75,6 @@ Each Segment can also define **SECTIONS**
 
 **Sections** further Subdivide the segment into named parts
 
-*EX) __DATA includes Section such as __objc_cfstring, containing NSStrings, and __objc_classlist, Containing Pointers to ObjC classes defined in the file*
+      *EX) __DATA includes Section such as __objc_cfstring, containing NSStrings, and __objc_classlist, Containing Pointers to ObjC classes defined in the file*
 
 (The Concept of Segments and Sections also exist in *ELF*, the executable format used by Linux and other Modern Unix Systems)
